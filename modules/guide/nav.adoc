@@ -1,0 +1,6 @@
+* xref:index.adoc[]
+* xref:a-title-with-code.adoc[]
+* xref:a-title-with-an-attribute.adoc[]
+* xref:a-title-with-a-custom-id.adoc[]
+* xref:the-navtitle-is-replacing-the-title.adoc[]
+* xref:the-navtitle-with-attributes-values-is-replacing-the-title.adoc[]

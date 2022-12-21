@@ -1,0 +1,16 @@
+:description: A title containing a attribute {my-attribute}
+
+= A title containing an attribute: {my-attribute}
+
+
+`docs.adoc` should contain:
+
+----
+== A title containing an attribute: {my-attribute}
+----
+
+rather than:
+
+----
+== A title containing an attribute: the attribute value
+----

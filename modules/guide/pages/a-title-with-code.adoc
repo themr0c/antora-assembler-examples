@@ -1,0 +1,13 @@
+= A title containing a `code` statement
+
+`docs.adoc` should contain:
+
+----
+== A title containing a `code` statement
+----
+
+rather than:
+
+----
+== A title containing a <code>code</code> statement
+----

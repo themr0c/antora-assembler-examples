@@ -1,0 +1,17 @@
+---
+site:
+  title: Antora example
+  start_page: docs:guide:index.adoc
+content:
+  sources:
+    - url: ./
+      branches: HEAD
+antora:
+  extensions:
+    - '@antora/pdf-extension'
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+output:
+  clean: true

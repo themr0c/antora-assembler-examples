@@ -1,0 +1,19 @@
+:description: A title containing a attribute {my-attribute}
+:navtitle: {my-attribute}
+
+= A long title
+
+The title is replaced by the navtitle, with the attributes values.
+
+
+`docs.adoc` should contain:
+
+----
+== A long title
+----
+
+rather than:
+
+----
+== the attribute value
+----

@@ -1,0 +1,148 @@
+= docs
+:doctype: book
+:page-component-name: docs
+:page-component-version:
+:page-version: {page-component-version}
+:page-component-display-version: default
+:page-component-title: docs
+
+:docname: index
+:page-module: guide
+:page-relative-src-path: index.adoc
+:page-origin-url: https://github.com/themr0c/antora-assembler-examples.git
+:page-origin-start-path:
+:page-origin-refname: main
+:page-origin-reftype: branch
+:page-origin-refhash: (worktree)
+[#guide:index:::]
+== A title
+
+Some content.
+
+:docname: a-title-with-code
+:page-module: guide
+:page-relative-src-path: a-title-with-code.adoc
+:page-origin-url: https://github.com/themr0c/antora-assembler-examples.git
+:page-origin-start-path:
+:page-origin-refname: main
+:page-origin-reftype: branch
+:page-origin-refhash: (worktree)
+[#guide:a-title-with-code:::]
+== A title containing a <code>code</code> statement
+
+`docs.adoc` should contain:
+
+----
+== A title containing a `code` statement
+----
+
+rather than:
+
+----
+== A title containing a <code>code</code> statement
+----
+
+:docname: a-title-with-an-attribute
+:page-module: guide
+:page-relative-src-path: a-title-with-an-attribute.adoc
+:page-origin-url: https://github.com/themr0c/antora-assembler-examples.git
+:page-origin-start-path:
+:page-origin-refname: main
+:page-origin-reftype: branch
+:page-origin-refhash: (worktree)
+[#guide:a-title-with-an-attribute:::]
+== A title containing an attribute: the attribute value
+:description: A title containing a attribute {my-attribute}
+
+
+
+`docs.adoc` should contain:
+
+----
+== A title containing an attribute: {my-attribute}
+----
+
+rather than:
+
+----
+== A title containing an attribute: the attribute value
+----
+
+:!description:
+
+:docname: a-title-with-a-custom-id
+:page-module: guide
+:page-relative-src-path: a-title-with-a-custom-id.adoc
+:page-origin-url: https://github.com/themr0c/antora-assembler-examples.git
+:page-origin-start-path:
+:page-origin-refname: main
+:page-origin-reftype: branch
+:page-origin-refhash: (worktree)
+[#guide:a-title-with-a-custom-id:::]
+== A title
+[id="custom-id"]
+
+In `docs.adoc` the id should stay above the title rather than moving below.
+
+:docname: the-navtitle-is-replacing-the-title
+:page-module: guide
+:page-relative-src-path: the-navtitle-is-replacing-the-title.adoc
+:page-origin-url: https://github.com/themr0c/antora-assembler-examples.git
+:page-origin-start-path:
+:page-origin-refname: main
+:page-origin-reftype: branch
+:page-origin-refhash: (worktree)
+[#guide:the-navtitle-is-replacing-the-title:::]
+== The nav title
+:description: A title containing a attribute {my-attribute}
+:navtitle: The nav title
+
+
+The nav title is replacing the title.
+
+`docs.adoc` should contain:
+
+----
+== A long title
+----
+
+rather than:
+
+----
+== The nav title
+----
+
+:!description:
+:!navtitle:
+
+:docname: the-navtitle-with-attributes-values-is-replacing-the-title
+:page-module: guide
+:page-relative-src-path: the-navtitle-with-attributes-values-is-replacing-the-title.adoc
+:page-origin-url: https://github.com/themr0c/antora-assembler-examples.git
+:page-origin-start-path:
+:page-origin-refname: main
+:page-origin-reftype: branch
+:page-origin-refhash: (worktree)
+[#guide:the-navtitle-with-attributes-values-is-replacing-the-title:::]
+== the attribute value
+:description: A title containing a attribute {my-attribute}
+:navtitle: {my-attribute}
+
+
+The title is replaced by the navtitle, with the attributes values.
+
+
+`docs.adoc` should contain:
+
+----
+== A long title
+----
+
+rather than:
+
+----
+== the attribute value
+----
+
+:!description:
+:!navtitle:

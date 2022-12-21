@@ -1,0 +1,4 @@
+[id="custom-id"]
+= A title
+
+In `docs.adoc` the id should stay above the title rather than moving below.

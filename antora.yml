@@ -1,0 +1,9 @@
+---
+name: docs
+version: ~
+start_page: guide:index.adoc
+nav:
+  - modules/guide/nav.adoc
+asciidoc:
+  attributes:
+    my-attribute: the attribute value
